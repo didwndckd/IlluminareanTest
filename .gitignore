@@ -140,6 +140,6 @@ iOSInjectionProject/
 **/xcshareddata/WorkspaceSettings.xcsettings
 
 # Secret
-IlluminareanTest/Constant/Secret.swift
+IlluminareanTest/Constant/Constant+Secret.swift
 
 # End of https://www.toptal.com/developers/gitignore/api/xcode,swift,cocoapods,macos
