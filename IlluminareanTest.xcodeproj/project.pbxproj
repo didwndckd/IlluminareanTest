@@ -42,6 +42,14 @@
 		3113FC632A166C7800C3AF86 /* GitHubAccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3113FC622A166C7800C3AF86 /* GitHubAccessToken.swift */; };
 		3113FC652A166F1A00C3AF86 /* APILoggerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3113FC642A166F1A00C3AF86 /* APILoggerPlugin.swift */; };
 		3113FC6C2A1673FB00C3AF86 /* OptionalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3113FC6B2A1673FB00C3AF86 /* OptionalProtocol.swift */; };
+		3113FC6F2A1678E600C3AF86 /* SearchUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3113FC6E2A1678E600C3AF86 /* SearchUserViewModel.swift */; };
+		3113FC712A16791800C3AF86 /* SearchUserViewModel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3113FC702A16791800C3AF86 /* SearchUserViewModel+.swift */; };
+		3113FC732A16792C00C3AF86 /* SearchUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3113FC722A16792C00C3AF86 /* SearchUserViewController.swift */; };
+		3113FC762A167A0C00C3AF86 /* LoginServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3113FC752A167A0C00C3AF86 /* LoginServiceError.swift */; };
+		3113FC792A167AB600C3AF86 /* SystemAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3113FC782A167AB600C3AF86 /* SystemAlert.swift */; };
+		3113FC7B2A167ACB00C3AF86 /* SystemAlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3113FC7A2A167ACB00C3AF86 /* SystemAlertAction.swift */; };
+		3113FC7D2A167AEE00C3AF86 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3113FC7C2A167AEE00C3AF86 /* UIViewController+.swift */; };
+		3113FC7F2A167B1200C3AF86 /* UIAlertController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3113FC7E2A167B1200C3AF86 /* UIAlertController+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +85,14 @@
 		3113FC622A166C7800C3AF86 /* GitHubAccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAccessToken.swift; sourceTree = "<group>"; };
 		3113FC642A166F1A00C3AF86 /* APILoggerPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APILoggerPlugin.swift; sourceTree = "<group>"; };
 		3113FC6B2A1673FB00C3AF86 /* OptionalProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalProtocol.swift; sourceTree = "<group>"; };
+		3113FC6E2A1678E600C3AF86 /* SearchUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserViewModel.swift; sourceTree = "<group>"; };
+		3113FC702A16791800C3AF86 /* SearchUserViewModel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchUserViewModel+.swift"; sourceTree = "<group>"; };
+		3113FC722A16792C00C3AF86 /* SearchUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserViewController.swift; sourceTree = "<group>"; };
+		3113FC752A167A0C00C3AF86 /* LoginServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceError.swift; sourceTree = "<group>"; };
+		3113FC782A167AB600C3AF86 /* SystemAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemAlert.swift; sourceTree = "<group>"; };
+		3113FC7A2A167ACB00C3AF86 /* SystemAlertAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemAlertAction.swift; sourceTree = "<group>"; };
+		3113FC7C2A167AEE00C3AF86 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		3113FC7E2A167B1200C3AF86 /* UIAlertController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +181,7 @@
 		3113FC1A2A1521F300C3AF86 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				3113FC6D2A1678D900C3AF86 /* SearchUser */,
 				3113FC1B2A15220400C3AF86 /* Login */,
 			);
 			path = Screen;
@@ -183,9 +200,8 @@
 		3113FC222A15241900C3AF86 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				3113FC4B2A16575C00C3AF86 /* APIService.swift */,
+				3113FC742A1679FC00C3AF86 /* Login */,
 				3113FC252A15254E00C3AF86 /* WindowService.swift */,
-				3113FC232A15242700C3AF86 /* LoginService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -196,6 +212,8 @@
 				3113FC3C2A16508700C3AF86 /* UIView+.swift */,
 				3113FC532A165D5700C3AF86 /* Publisher+.swift */,
 				3113FC552A165DD300C3AF86 /* UIControl+.swift */,
+				3113FC7C2A167AEE00C3AF86 /* UIViewController+.swift */,
+				3113FC7E2A167B1200C3AF86 /* UIAlertController+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -203,6 +221,7 @@
 		3113FC412A1656CA00C3AF86 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				3113FC4B2A16575C00C3AF86 /* APIService.swift */,
 				3113FC422A1656D800C3AF86 /* Target */,
 				3113FC472A16571D00C3AF86 /* APIError.swift */,
 				3113FC492A16573C00C3AF86 /* APIProvider.swift */,
@@ -241,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				3113FC622A166C7800C3AF86 /* GitHubAccessToken.swift */,
+				3113FC772A167A9D00C3AF86 /* SystemAlert */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -251,6 +271,34 @@
 				3113FC6B2A1673FB00C3AF86 /* OptionalProtocol.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		3113FC6D2A1678D900C3AF86 /* SearchUser */ = {
+			isa = PBXGroup;
+			children = (
+				3113FC6E2A1678E600C3AF86 /* SearchUserViewModel.swift */,
+				3113FC702A16791800C3AF86 /* SearchUserViewModel+.swift */,
+				3113FC722A16792C00C3AF86 /* SearchUserViewController.swift */,
+			);
+			path = SearchUser;
+			sourceTree = "<group>";
+		};
+		3113FC742A1679FC00C3AF86 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3113FC232A15242700C3AF86 /* LoginService.swift */,
+				3113FC752A167A0C00C3AF86 /* LoginServiceError.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3113FC772A167A9D00C3AF86 /* SystemAlert */ = {
+			isa = PBXGroup;
+			children = (
+				3113FC782A167AB600C3AF86 /* SystemAlert.swift */,
+				3113FC7A2A167ACB00C3AF86 /* SystemAlertAction.swift */,
+			);
+			path = SystemAlert;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,17 +391,24 @@
 				3113FC542A165D5700C3AF86 /* Publisher+.swift in Sources */,
 				3113FC4A2A16573C00C3AF86 /* APIProvider.swift in Sources */,
 				3113FC212A15225800C3AF86 /* LoginViewController.swift in Sources */,
+				3113FC7D2A167AEE00C3AF86 /* UIViewController+.swift in Sources */,
 				3113FC1F2A15223800C3AF86 /* LoginViewModel+.swift in Sources */,
+				3113FC732A16792C00C3AF86 /* SearchUserViewController.swift in Sources */,
+				3113FC7F2A167B1200C3AF86 /* UIAlertController+.swift in Sources */,
 				3113FC172A1516B700C3AF86 /* ViewModel.swift in Sources */,
+				3113FC792A167AB600C3AF86 /* SystemAlert.swift in Sources */,
 				3113FC002A150C5400C3AF86 /* ViewController.swift in Sources */,
+				3113FC7B2A167ACB00C3AF86 /* SystemAlertAction.swift in Sources */,
 				3113FC602A166ADF00C3AF86 /* APITarget+GitHub.swift in Sources */,
 				3113FC112A15151800C3AF86 /* Constant+Secret.swift in Sources */,
 				3113FBFC2A150C5400C3AF86 /* AppDelegate.swift in Sources */,
 				3113FC6C2A1673FB00C3AF86 /* OptionalProtocol.swift in Sources */,
 				3113FC502A1658E300C3AF86 /* Constant+Domain.swift in Sources */,
+				3113FC762A167A0C00C3AF86 /* LoginServiceError.swift in Sources */,
 				3113FBFE2A150C5400C3AF86 /* SceneDelegate.swift in Sources */,
 				3113FC5E2A16689500C3AF86 /* Constant+Key.swift in Sources */,
 				3113FC482A16571D00C3AF86 /* APIError.swift in Sources */,
+				3113FC712A16791800C3AF86 /* SearchUserViewModel+.swift in Sources */,
 				3113FC562A165DD300C3AF86 /* UIControl+.swift in Sources */,
 				3113FC592A16600700C3AF86 /* UIControl+EventPublisher.swift in Sources */,
 				3113FC262A15254E00C3AF86 /* WindowService.swift in Sources */,
@@ -362,6 +417,7 @@
 				3113FC632A166C7800C3AF86 /* GitHubAccessToken.swift in Sources */,
 				3113FC192A1516FA00C3AF86 /* Constant.swift in Sources */,
 				3113FC1D2A15220D00C3AF86 /* LoginViewModel.swift in Sources */,
+				3113FC6F2A1678E600C3AF86 /* SearchUserViewModel.swift in Sources */,
 				3113FC442A1656EC00C3AF86 /* APITargetType.swift in Sources */,
 				3113FC462A16570300C3AF86 /* APITarget.swift in Sources */,
 			);

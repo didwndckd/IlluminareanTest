@@ -9,12 +9,6 @@ import UIKit
 import Combine
 import KeychainSwift
 
-enum LoginServiceError: Error {
-    case canNotOpenGithub
-    case noCode
-    case networkFailure(APIError)
-}
-
 final class LoginService {
     static let shared = LoginService()
     private init() {}
