@@ -9,7 +9,7 @@ import UIKit
 import Combine
 
 extension UIControl {
-    func eventPublisher(for event: Event) -> UIControl.EventPublisher {
-        return UIControl.EventPublisher(control: self, event: event)
+    func eventPublisher(for event: Event) -> EventPublisher {
+        return EventPublisher(control: self, event: event)
     }
 }

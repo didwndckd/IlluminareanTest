@@ -9,6 +9,12 @@ import Foundation
 import Combine
 
 extension SearchUserViewModel {
-    struct Input {}
-    struct Output {}
+    struct Input {
+        let searchKeyword: AnyPublisher<String, Never>
+        let search: AnyPublisher<Void, Never>
+    }
+    
+    struct Output {
+        let searchKeywordIsEmpty: AnyPublisher<Bool, Never>
+    }
 }
