@@ -6,8 +6,12 @@
 //
 
 import Foundation
+import Combine
 
 extension LoginViewModel {
-    struct Input {}
+    struct Input {
+        let lgoin: AnyPublisher<Void, Never>
+    }
+    
     struct Output {}
 }

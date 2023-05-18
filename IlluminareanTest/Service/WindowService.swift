@@ -16,15 +16,15 @@ final class WindowService {
 
 extension WindowService {
     func configure(window: UIWindow) {
-        if LoginService.shared.isLogin {
-            
-        }
-        else {
+//        if LoginService.shared.isLogin {
+//            
+//        }
+//        else {
             let viewModel = LoginViewModel()
             let viewController = LoginViewController(viewModel: viewModel)
             let navigationController = UINavigationController(rootViewController: viewController)
             window.rootViewController = navigationController
-        }
+//        }
         
         window.makeKeyAndVisible()
         self.window = window
