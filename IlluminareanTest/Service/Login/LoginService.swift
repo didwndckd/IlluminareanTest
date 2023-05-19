@@ -14,10 +14,10 @@ final class LoginService {
     private init() {}
     
     private var cancelBag: Set<AnyCancellable> = []
-    private var loginResult = PassthroughSubject<GitHubAccessToken, LoginServiceError>()
+    private var loginResult = PassthroughSubject<GitHubAccessTokenData, LoginServiceError>()
     
     @KeyChainStorage(key: Constant.Key.accessToken, defaultValue: nil)
-    private var storedAccessToken: GitHubAccessToken?
+    private var storedAccessTokenData: GitHubAccessTokenData?
     
     private let apiService = APIService()
     
@@ -26,7 +26,7 @@ final class LoginService {
 extension LoginService {
     /// 깃헙에 코드를 요청하고 실패시 loginResult에 에러 방출
     private func requestGithubCode() {
-        guard let url = URL(string: Constant.Domain.gitHub + "/login/oauth/authorize?client_id=\(Constant.Secret.gitHubClientId)&scope=repo,user") else {
+        guard let url = URL(string: Constant.Domain.gitHub + "/login/oauth/authorize?client_id=\(Constant.Secret.gitHubClientId)&scope=user") else {
             self.loginResult.send(completion: .failure(.canNotOpenGithub))
             return
         }
@@ -41,7 +41,7 @@ extension LoginService {
     /// 깃헙에 AccessToken 요청 후 결과 방출
     private func requestAccessToken(code: String) {
         let target = APITarget.GitHub.accessToken(code: code)
-        self.apiService.request(target, parsingType: GitHubAccessToken.self)
+        self.apiService.request(target, parsingType: GitHubAccessTokenData.self)
             .sink(
                 receiveCompletion: { [weak self] completion in
                     switch completion {
@@ -52,7 +52,7 @@ extension LoginService {
                     }
                 },
                 receiveValue: { [weak self] response in
-                    self?.storedAccessToken = response
+                    self?.storedAccessTokenData = response
                     self?.loginResult.send(response)
                 })
             .store(in: &self.cancelBag)
@@ -63,16 +63,16 @@ extension LoginService {
 extension LoginService {
     /// 로그인 여부
     var isLogin: Bool {
-        return self.storedAccessToken != nil
+        return self.storedAccessTokenData != nil
     }
     
     /// 토큰 데이터
-    var accessToken: GitHubAccessToken? {
-        return self.storedAccessToken
+    var accessTokenData: GitHubAccessTokenData? {
+        return self.storedAccessTokenData
     }
     
     /// 로그인 요청 후 결과 퍼블리셔 반환
-    func login() -> some Publisher<GitHubAccessToken, LoginServiceError> {
+    func login() -> some Publisher<GitHubAccessTokenData, LoginServiceError> {
         self.loginResult = .init()
         self.requestGithubCode()
         return self.loginResult
@@ -90,5 +90,9 @@ extension LoginService {
         }
         
         self.requestAccessToken(code: code)
+    }
+    
+    func logout() {
+        self.storedAccessTokenData = nil
     }
 }

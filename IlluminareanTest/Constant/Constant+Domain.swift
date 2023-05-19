@@ -13,4 +13,5 @@ extension Constant {
 
 extension Constant.Domain {
     static var gitHub: String { "https://github.com" }
+    static var gitHubApi: String { "https://api.github.com" }
 }

@@ -17,11 +17,8 @@ enum APIError: Error {
 
 extension APIError {
     init(moyaError: MoyaError) {
-        if moyaError.code == -1009 || moyaError.code == -1020 {
+        if moyaError.code == 6 {
             self = .connectionFailure
-        }
-        else if moyaError.code == 6 {
-            self = .cancelled
         }
         else {
             self = .unknown(origin: moyaError)
@@ -93,26 +90,6 @@ extension APIError {
             print("APIError: 파싱 에러 -> \(error)")
         case .unknown(origin: let error):
             print("APIError: 알수없는 네트워크 에러 -> \(error)")
-        }
-    }
-}
-
-extension Error {
-    var message: String {
-        return (self as? APIError)?.message ?? self.localizedDescription
-    }
-    
-    var code: Int {
-        if let apiError = self as? APIError {
-            return apiError.code
-        }
-        else if let error = self.asAFError?.underlyingError {
-            let code = (error as NSError).code
-            return code
-        }
-        else {
-            let code = (self as NSError).code
-            return code
         }
     }
 }

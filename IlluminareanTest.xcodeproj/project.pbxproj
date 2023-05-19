@@ -39,7 +39,7 @@
 		3113FC5C2A16687500C3AF86 /* KeyChainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3113FC5B2A16687500C3AF86 /* KeyChainStorage.swift */; };
 		3113FC5E2A16689500C3AF86 /* Constant+Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3113FC5D2A16689500C3AF86 /* Constant+Key.swift */; };
 		3113FC602A166ADF00C3AF86 /* APITarget+GitHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3113FC5F2A166ADF00C3AF86 /* APITarget+GitHub.swift */; };
-		3113FC632A166C7800C3AF86 /* GitHubAccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3113FC622A166C7800C3AF86 /* GitHubAccessToken.swift */; };
+		3113FC632A166C7800C3AF86 /* GitHubAccessTokenData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3113FC622A166C7800C3AF86 /* GitHubAccessTokenData.swift */; };
 		3113FC652A166F1A00C3AF86 /* APILoggerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3113FC642A166F1A00C3AF86 /* APILoggerPlugin.swift */; };
 		3113FC6C2A1673FB00C3AF86 /* OptionalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3113FC6B2A1673FB00C3AF86 /* OptionalProtocol.swift */; };
 		3113FC6F2A1678E600C3AF86 /* SearchUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3113FC6E2A1678E600C3AF86 /* SearchUserViewModel.swift */; };
@@ -50,6 +50,19 @@
 		3113FC7B2A167ACB00C3AF86 /* SystemAlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3113FC7A2A167ACB00C3AF86 /* SystemAlertAction.swift */; };
 		3113FC7D2A167AEE00C3AF86 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3113FC7C2A167AEE00C3AF86 /* UIViewController+.swift */; };
 		3113FC7F2A167B1200C3AF86 /* UIAlertController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3113FC7E2A167B1200C3AF86 /* UIAlertController+.swift */; };
+		3113FC872A17A3C600C3AF86 /* GitHubUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3113FC862A17A3C600C3AF86 /* GitHubUser.swift */; };
+		3113FC892A17ADEA00C3AF86 /* GitHubUserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3113FC882A17ADEA00C3AF86 /* GitHubUserList.swift */; };
+		3113FC8D2A17B68400C3AF86 /* SubscribeCountTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3113FC8C2A17B68400C3AF86 /* SubscribeCountTracker.swift */; };
+		3113FC8F2A17B69700C3AF86 /* LoadingTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3113FC8E2A17B69700C3AF86 /* LoadingTracker.swift */; };
+		3113FC912A17B71100C3AF86 /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3113FC902A17B71100C3AF86 /* Loadable.swift */; };
+		3113FC932A17B72700C3AF86 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3113FC922A17B72700C3AF86 /* LoadingView.swift */; };
+		3113FC952A17B74C00C3AF86 /* UIActivityIndicatorView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3113FC942A17B74C00C3AF86 /* UIActivityIndicatorView+.swift */; };
+		3113FC972A17BEFC00C3AF86 /* GitHubUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3113FC962A17BEFC00C3AF86 /* GitHubUserCell.swift */; };
+		3113FC992A17BF2100C3AF86 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3113FC982A17BF2100C3AF86 /* ReusableView.swift */; };
+		3113FC9B2A17BF4200C3AF86 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3113FC9A2A17BF4200C3AF86 /* UITableView+.swift */; };
+		3113FC9E2A17C10700C3AF86 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 3113FC9D2A17C10700C3AF86 /* Kingfisher */; };
+		3113FCA02A17C11900C3AF86 /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3113FC9F2A17C11900C3AF86 /* UIImageView+.swift */; };
+		3113FCA22A17D1FF00C3AF86 /* Error+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3113FCA12A17D1FF00C3AF86 /* Error+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,7 +95,7 @@
 		3113FC5B2A16687500C3AF86 /* KeyChainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainStorage.swift; sourceTree = "<group>"; };
 		3113FC5D2A16689500C3AF86 /* Constant+Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constant+Key.swift"; sourceTree = "<group>"; };
 		3113FC5F2A166ADF00C3AF86 /* APITarget+GitHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APITarget+GitHub.swift"; sourceTree = "<group>"; };
-		3113FC622A166C7800C3AF86 /* GitHubAccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAccessToken.swift; sourceTree = "<group>"; };
+		3113FC622A166C7800C3AF86 /* GitHubAccessTokenData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAccessTokenData.swift; sourceTree = "<group>"; };
 		3113FC642A166F1A00C3AF86 /* APILoggerPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APILoggerPlugin.swift; sourceTree = "<group>"; };
 		3113FC6B2A1673FB00C3AF86 /* OptionalProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalProtocol.swift; sourceTree = "<group>"; };
 		3113FC6E2A1678E600C3AF86 /* SearchUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserViewModel.swift; sourceTree = "<group>"; };
@@ -93,6 +106,18 @@
 		3113FC7A2A167ACB00C3AF86 /* SystemAlertAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemAlertAction.swift; sourceTree = "<group>"; };
 		3113FC7C2A167AEE00C3AF86 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		3113FC7E2A167B1200C3AF86 /* UIAlertController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+.swift"; sourceTree = "<group>"; };
+		3113FC862A17A3C600C3AF86 /* GitHubUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUser.swift; sourceTree = "<group>"; };
+		3113FC882A17ADEA00C3AF86 /* GitHubUserList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUserList.swift; sourceTree = "<group>"; };
+		3113FC8C2A17B68400C3AF86 /* SubscribeCountTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeCountTracker.swift; sourceTree = "<group>"; };
+		3113FC8E2A17B69700C3AF86 /* LoadingTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingTracker.swift; sourceTree = "<group>"; };
+		3113FC902A17B71100C3AF86 /* Loadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
+		3113FC922A17B72700C3AF86 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		3113FC942A17B74C00C3AF86 /* UIActivityIndicatorView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIActivityIndicatorView+.swift"; sourceTree = "<group>"; };
+		3113FC962A17BEFC00C3AF86 /* GitHubUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUserCell.swift; sourceTree = "<group>"; };
+		3113FC982A17BF2100C3AF86 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		3113FC9A2A17BF4200C3AF86 /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
+		3113FC9F2A17C11900C3AF86 /* UIImageView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
+		3113FCA12A17D1FF00C3AF86 /* Error+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3113FC9E2A17C10700C3AF86 /* Kingfisher in Frameworks */,
 				3113FC352A164FED00C3AF86 /* CombineMoya in Frameworks */,
 				3113FC3A2A164FFF00C3AF86 /* SnapKit in Frameworks */,
 				3113FC402A1655E000C3AF86 /* KeychainSwift in Frameworks */,
@@ -131,7 +157,6 @@
 			isa = PBXGroup;
 			children = (
 				3113FC092A150C5500C3AF86 /* Info.plist */,
-				3113FC662A16719C00C3AF86 /* Protocol */,
 				3113FC142A15166800C3AF86 /* App */,
 				3113FC0F2A15150C00C3AF86 /* Constant */,
 				3113FC3B2A16507700C3AF86 /* Extension */,
@@ -141,6 +166,7 @@
 				3113FC412A1656CA00C3AF86 /* API */,
 				3113FC222A15241900C3AF86 /* Service */,
 				3113FC1A2A1521F300C3AF86 /* Screen */,
+				3113FC662A16719C00C3AF86 /* Protocol */,
 				3113FC612A166C5400C3AF86 /* Model */,
 			);
 			path = IlluminareanTest;
@@ -214,6 +240,10 @@
 				3113FC552A165DD300C3AF86 /* UIControl+.swift */,
 				3113FC7C2A167AEE00C3AF86 /* UIViewController+.swift */,
 				3113FC7E2A167B1200C3AF86 /* UIAlertController+.swift */,
+				3113FC942A17B74C00C3AF86 /* UIActivityIndicatorView+.swift */,
+				3113FC9A2A17BF4200C3AF86 /* UITableView+.swift */,
+				3113FC9F2A17C11900C3AF86 /* UIImageView+.swift */,
+				3113FCA12A17D1FF00C3AF86 /* Error+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -221,11 +251,11 @@
 		3113FC412A1656CA00C3AF86 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				3113FC4B2A16575C00C3AF86 /* APIService.swift */,
-				3113FC422A1656D800C3AF86 /* Target */,
 				3113FC472A16571D00C3AF86 /* APIError.swift */,
 				3113FC492A16573C00C3AF86 /* APIProvider.swift */,
+				3113FC4B2A16575C00C3AF86 /* APIService.swift */,
 				3113FC642A166F1A00C3AF86 /* APILoggerPlugin.swift */,
+				3113FC422A1656D800C3AF86 /* Target */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -244,6 +274,8 @@
 			isa = PBXGroup;
 			children = (
 				3113FC582A16600700C3AF86 /* UIControl+EventPublisher.swift */,
+				3113FC8C2A17B68400C3AF86 /* SubscribeCountTracker.swift */,
+				3113FC8E2A17B69700C3AF86 /* LoadingTracker.swift */,
 			);
 			path = Publisher;
 			sourceTree = "<group>";
@@ -259,7 +291,9 @@
 		3113FC612A166C5400C3AF86 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3113FC622A166C7800C3AF86 /* GitHubAccessToken.swift */,
+				3113FC622A166C7800C3AF86 /* GitHubAccessTokenData.swift */,
+				3113FC862A17A3C600C3AF86 /* GitHubUser.swift */,
+				3113FC882A17ADEA00C3AF86 /* GitHubUserList.swift */,
 				3113FC772A167A9D00C3AF86 /* SystemAlert */,
 			);
 			path = Model;
@@ -269,6 +303,9 @@
 			isa = PBXGroup;
 			children = (
 				3113FC6B2A1673FB00C3AF86 /* OptionalProtocol.swift */,
+				3113FC982A17BF2100C3AF86 /* ReusableView.swift */,
+				3113FC902A17B71100C3AF86 /* Loadable.swift */,
+				3113FC922A17B72700C3AF86 /* LoadingView.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -279,6 +316,7 @@
 				3113FC6E2A1678E600C3AF86 /* SearchUserViewModel.swift */,
 				3113FC702A16791800C3AF86 /* SearchUserViewModel+.swift */,
 				3113FC722A16792C00C3AF86 /* SearchUserViewController.swift */,
+				3113FC962A17BEFC00C3AF86 /* GitHubUserCell.swift */,
 			);
 			path = SearchUser;
 			sourceTree = "<group>";
@@ -323,6 +361,7 @@
 				3113FC362A164FED00C3AF86 /* Moya */,
 				3113FC392A164FFF00C3AF86 /* SnapKit */,
 				3113FC3F2A1655E000C3AF86 /* KeychainSwift */,
+				3113FC9D2A17C10700C3AF86 /* Kingfisher */,
 			);
 			productName = IlluminareanTest;
 			productReference = 3113FBF82A150C5400C3AF86 /* IlluminareanTest.app */;
@@ -357,6 +396,7 @@
 				3113FC332A164FED00C3AF86 /* XCRemoteSwiftPackageReference "Moya" */,
 				3113FC382A164FFF00C3AF86 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				3113FC3E2A1655E000C3AF86 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+				3113FC9C2A17C10600C3AF86 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 3113FBF92A150C5400C3AF86 /* Products */;
 			projectDirPath = "";
@@ -388,33 +428,45 @@
 				3113FC4C2A16575C00C3AF86 /* APIService.swift in Sources */,
 				3113FC652A166F1A00C3AF86 /* APILoggerPlugin.swift in Sources */,
 				3113FC3D2A16508700C3AF86 /* UIView+.swift in Sources */,
+				3113FC9B2A17BF4200C3AF86 /* UITableView+.swift in Sources */,
 				3113FC542A165D5700C3AF86 /* Publisher+.swift in Sources */,
 				3113FC4A2A16573C00C3AF86 /* APIProvider.swift in Sources */,
 				3113FC212A15225800C3AF86 /* LoginViewController.swift in Sources */,
 				3113FC7D2A167AEE00C3AF86 /* UIViewController+.swift in Sources */,
 				3113FC1F2A15223800C3AF86 /* LoginViewModel+.swift in Sources */,
+				3113FC972A17BEFC00C3AF86 /* GitHubUserCell.swift in Sources */,
 				3113FC732A16792C00C3AF86 /* SearchUserViewController.swift in Sources */,
 				3113FC7F2A167B1200C3AF86 /* UIAlertController+.swift in Sources */,
 				3113FC172A1516B700C3AF86 /* ViewModel.swift in Sources */,
 				3113FC792A167AB600C3AF86 /* SystemAlert.swift in Sources */,
+				3113FC8F2A17B69700C3AF86 /* LoadingTracker.swift in Sources */,
 				3113FC002A150C5400C3AF86 /* ViewController.swift in Sources */,
+				3113FC992A17BF2100C3AF86 /* ReusableView.swift in Sources */,
 				3113FC7B2A167ACB00C3AF86 /* SystemAlertAction.swift in Sources */,
 				3113FC602A166ADF00C3AF86 /* APITarget+GitHub.swift in Sources */,
 				3113FC112A15151800C3AF86 /* Constant+Secret.swift in Sources */,
+				3113FC952A17B74C00C3AF86 /* UIActivityIndicatorView+.swift in Sources */,
 				3113FBFC2A150C5400C3AF86 /* AppDelegate.swift in Sources */,
+				3113FCA02A17C11900C3AF86 /* UIImageView+.swift in Sources */,
 				3113FC6C2A1673FB00C3AF86 /* OptionalProtocol.swift in Sources */,
 				3113FC502A1658E300C3AF86 /* Constant+Domain.swift in Sources */,
 				3113FC762A167A0C00C3AF86 /* LoginServiceError.swift in Sources */,
 				3113FBFE2A150C5400C3AF86 /* SceneDelegate.swift in Sources */,
+				3113FC872A17A3C600C3AF86 /* GitHubUser.swift in Sources */,
 				3113FC5E2A16689500C3AF86 /* Constant+Key.swift in Sources */,
 				3113FC482A16571D00C3AF86 /* APIError.swift in Sources */,
 				3113FC712A16791800C3AF86 /* SearchUserViewModel+.swift in Sources */,
+				3113FC932A17B72700C3AF86 /* LoadingView.swift in Sources */,
+				3113FC892A17ADEA00C3AF86 /* GitHubUserList.swift in Sources */,
 				3113FC562A165DD300C3AF86 /* UIControl+.swift in Sources */,
+				3113FCA22A17D1FF00C3AF86 /* Error+.swift in Sources */,
+				3113FC8D2A17B68400C3AF86 /* SubscribeCountTracker.swift in Sources */,
+				3113FC912A17B71100C3AF86 /* Loadable.swift in Sources */,
 				3113FC592A16600700C3AF86 /* UIControl+EventPublisher.swift in Sources */,
 				3113FC262A15254E00C3AF86 /* WindowService.swift in Sources */,
 				3113FC242A15242700C3AF86 /* LoginService.swift in Sources */,
 				3113FC5C2A16687500C3AF86 /* KeyChainStorage.swift in Sources */,
-				3113FC632A166C7800C3AF86 /* GitHubAccessToken.swift in Sources */,
+				3113FC632A166C7800C3AF86 /* GitHubAccessTokenData.swift in Sources */,
 				3113FC192A1516FA00C3AF86 /* Constant.swift in Sources */,
 				3113FC1D2A15220D00C3AF86 /* LoginViewModel.swift in Sources */,
 				3113FC6F2A1678E600C3AF86 /* SearchUserViewModel.swift in Sources */,
@@ -671,6 +723,14 @@
 				minimumVersion = 20.0.0;
 			};
 		};
+		3113FC9C2A17C10600C3AF86 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -698,6 +758,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3113FC3E2A1655E000C3AF86 /* XCRemoteSwiftPackageReference "keychain-swift" */;
 			productName = KeychainSwift;
+		};
+		3113FC9D2A17C10700C3AF86 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3113FC9C2A17C10600C3AF86 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
