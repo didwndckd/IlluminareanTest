@@ -53,9 +53,32 @@ final class LoginViewController: UIViewController {
     }
 }
 
+// MARK: bindUI
 extension LoginViewController {
     private func bindUI() {
         let input = LoginViewModel.Input(lgoin: self.loginButton.eventPublisher(for: .touchUpInside).map { _ in () }.eraseToAnyPublisher())
         let output = self.viewModel.transform(input: input)
+        
+        output.moveTo
+            .receive(on: DispatchQueue.main)
+            .sink(
+                with: self,
+                receiveValue: { controller, moveTo in
+                    switch moveTo {
+                    case .searchUser:
+                        controller.replaceSearchUser()
+                    }
+                })
+            .store(in: &self.cancelBag)
+    }
+}
+
+// MARK: MoveTo
+extension LoginViewController {
+    private func replaceSearchUser() {
+        let viewModel = SearchUserViewModel()
+        let viewController = SearchUserViewController(viewModel: viewModel)
+        let navigationController = UINavigationController(rootViewController: viewController)
+        WindowService.shared.replaceRootViewController(navigationController, animated: true)
     }
 }

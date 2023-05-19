@@ -1,5 +1,5 @@
 //
-//  GitHubLoginResult.swift
+//  GitHubAccessTokenData.swift
 //  IlluminareanTest
 //
 //  Created by yjc on 2023/05/18.
@@ -7,13 +7,13 @@
 
 import Foundation
 
-struct GitHubAccessToken {
+struct GitHubAccessTokenData {
     let accessToken: String
     let scope: String
     let tokenType: String
 }
 
-extension GitHubAccessToken: Codable {
+extension GitHubAccessTokenData: Codable {
     enum CodingKeys: String, CodingKey {
         case accessToken = "access_token"
         case scope = "scope"

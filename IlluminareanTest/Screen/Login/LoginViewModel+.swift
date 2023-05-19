@@ -13,5 +13,12 @@ extension LoginViewModel {
         let lgoin: AnyPublisher<Void, Never>
     }
     
-    struct Output {}
+    struct Output {
+        let alert: AnyPublisher<SystemAlert, Never>
+        let moveTo: AnyPublisher<MoveTo, Never>
+    }
+    
+    enum MoveTo {
+        case searchUser
+    }
 }
