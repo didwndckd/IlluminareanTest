@@ -4,15 +4,17 @@
 
 GitHub OAuth를 사용하기 위한 `client_id`와 `client_secret`값이 필요합니다.
 
-Public 
+Public repository에 올릴 수 없는 파일은 **ignore** 처리 했기때문에 `client_id`와 `client_secret` 값이 들어있는 파일은 따로 추가가 필요합니다.
 
 함께 첨부한 `Constant+Secret.swift` 파일을 프로젝트 내 `IlluminareanTest/Constant` 경로에 추가해 주세요.
+
+![setting](setting.png)
 
 ## Protocol
 
 ### LoadingView
 
-로딩을 실행할 뷰 프로토콜
+로딩을 표시할 뷰 프로토콜
 
 - 요구사항
 
@@ -22,6 +24,46 @@ Public
   // 로딩 종료
   func stopLoading()
   ```
+
+### Loadable
+
+로딩을 실행할 프로토콜
+
+- 요구사항
+
+  ``` swift
+  // 로딩 시작
+  func startLoading()
+  // 로딩 종료
+  func stopLoading()
+  // 로딩을 표시할 뷰를 전달받아 로딩 시작
+  func startLoading(loadingView: LoadingView)
+  // 로딩을 표시할 뷰를 전달받아 로딩 종료
+  func stopLoading(loadingView: LoadingView)
+  ```
+
+### ReusableView
+
+재사용 할 뷰 프로토콜
+
+- 요구사항
+
+  ``` swift
+  // 개본 재사용 identifier
+  static var defaultReuseIdentifier: String { get }
+  ```
+
+### OptionalProtocol
+
+`nil` 여부를 판단 할 프로토콜
+
+- 요구사항
+
+  ``` swift
+  var isNil: Bool { get }
+  ```
+
+
 
 ## Extension
 
